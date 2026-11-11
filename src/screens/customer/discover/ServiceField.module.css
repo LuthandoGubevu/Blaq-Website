@@ -1,0 +1,5 @@
+.hint {
+  font-size: 12px;
+  color: var(--blaq-text-dim);
+  margin-top: var(--space-2);
+}

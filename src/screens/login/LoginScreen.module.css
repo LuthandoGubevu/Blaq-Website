@@ -1,0 +1,101 @@
+.screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--blaq-black);
+  padding: calc(var(--space-7) + env(safe-area-inset-top)) var(--space-5)
+    calc(var(--space-6) + env(safe-area-inset-bottom));
+}
+
+.content {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-7);
+  margin: auto 0;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  text-align: center;
+}
+
+.wordmark {
+  font-family: var(--font-display);
+  font-size: 52px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--blaq-text);
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.formError {
+  font-size: 13px;
+  color: var(--blaq-error);
+}
+
+.footer {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--eyebrow-tracking);
+  color: var(--blaq-text-dim);
+  text-align: center;
+}
+
+.roleSwitch {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--blaq-border-strong);
+}
+
+.roleOption {
+  min-height: var(--hit-target);
+  background: transparent;
+  border: 0;
+  color: var(--blaq-text-dim);
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--button-tracking);
+  cursor: pointer;
+  transition:
+    color var(--transition-fast) var(--transition-fast-easing),
+    background var(--transition-fast) var(--transition-fast-easing);
+}
+
+.roleOption + .roleOption {
+  border-left: 1px solid var(--blaq-border-strong);
+}
+
+.roleOption:hover {
+  color: var(--blaq-text);
+}
+
+.roleOptionActive,
+.roleOptionActive:hover {
+  background: var(--blaq-gold);
+  color: var(--blaq-black);
+}

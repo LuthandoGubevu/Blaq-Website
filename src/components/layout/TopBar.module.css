@@ -1,0 +1,25 @@
+.topBar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-5) var(--space-6);
+  border-bottom: 1px solid var(--blaq-border);
+  background: var(--blaq-black);
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--blaq-text);
+  line-height: 1.1;
+}
+
+.identity {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}

@@ -1,0 +1,58 @@
+:root {
+  /* Colour tokens */
+  --blaq-black: #080808;
+  --blaq-surface: #0c0c0c;
+  --blaq-surface-alt: #0f0f0f;
+  --blaq-field: #111111;
+  --blaq-border: #1c1c1c;
+  --blaq-border-strong: #262626;
+  --blaq-border-accent: #35301f;
+  --blaq-gold: #c8a96a;
+  --blaq-text: #f2f2f2;
+  --blaq-text-muted: #9a9a9a;
+  --blaq-text-dim: #6e6e6e;
+  --blaq-success: #7fb98a;
+  --blaq-error: #d98c7a;
+
+  /* Confirmation panel */
+  --blaq-confirm-bg: #0f0c07;
+  --blaq-confirm-border: #2a2317;
+
+  /* Calendar out-of-month days */
+  --blaq-calendar-outside: #3a3a3a;
+
+  /* Type */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  --eyebrow-tracking: 0.34em;
+  --button-tracking: 0.24em;
+
+  /* Shape — flat by default, these are the ONLY two exceptions */
+  --radius-none: 0;
+  --radius-pill: 999px;
+  --radius-circle: 50%;
+
+  /* Spacing scale — prefer gap over margin for sibling spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  /* Focus */
+  --focus-ring: var(--blaq-gold);
+  --focus-ring-offset: 2px;
+
+  /* Motion */
+  --transition-fast: 220ms;
+  --transition-fast-easing: ease;
+
+  /* Hit target */
+  --hit-target: 44px;
+
+  /* Admin layout */
+  --sidebar-width: 240px;
+  --sidebar-width-collapsed: 72px;
+}

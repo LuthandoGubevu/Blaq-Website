@@ -1,0 +1,34 @@
+.list {
+  border: 1px solid var(--blaq-border);
+}
+
+.row {
+  width: 100%;
+  min-height: var(--hit-target);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  border-bottom: 1px solid var(--blaq-border);
+  color: var(--blaq-text);
+  text-align: left;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row:hover {
+  background: var(--blaq-surface);
+}
+
+.label {
+  color: var(--blaq-text-muted);
+  font-size: 14px;
+}
+
+.value {
+  color: var(--blaq-text);
+  font-size: 14px;
+}

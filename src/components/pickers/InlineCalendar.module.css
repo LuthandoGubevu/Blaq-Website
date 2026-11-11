@@ -1,0 +1,113 @@
+.calendar {
+  border: 1px solid var(--blaq-border-strong);
+  background: var(--blaq-field);
+  padding: var(--space-4) var(--space-3);
+  margin: 0 calc(-1 * var(--space-5));
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.monthRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.monthLabel {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--blaq-text);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.monthNavButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--hit-target);
+  height: var(--hit-target);
+  border: 1px solid var(--blaq-border-strong);
+  color: var(--blaq-text-muted);
+}
+
+.monthNavButton:disabled {
+  opacity: 0.3;
+}
+
+.monthNavButton:not(:disabled):hover {
+  color: var(--blaq-gold);
+  border-color: var(--blaq-gold);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: var(--space-1);
+}
+
+.weekdayHead {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--blaq-text-dim);
+  padding: var(--space-2) 0;
+}
+
+.dayCell {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: var(--blaq-text);
+  min-height: var(--hit-target);
+}
+
+.dayOutside {
+  color: var(--blaq-calendar-outside);
+}
+
+.dayToday {
+  color: var(--blaq-gold);
+  font-weight: 700;
+}
+
+.daySelected {
+  background: var(--blaq-gold);
+  color: var(--blaq-black);
+  font-weight: 700;
+}
+
+.footerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--blaq-border);
+}
+
+.clearButton {
+  min-height: var(--hit-target);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--blaq-text-dim);
+}
+
+.clearButton:disabled {
+  opacity: 0.4;
+}
+
+.todayButton {
+  min-height: var(--hit-target);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--blaq-gold);
+}

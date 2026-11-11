@@ -1,0 +1,58 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--eyebrow-tracking);
+  color: var(--blaq-text-muted);
+}
+
+.trigger {
+  min-height: var(--hit-target);
+  width: 100%;
+  background: var(--blaq-field);
+  border: 1px solid var(--blaq-border-strong);
+  border-radius: var(--radius-none);
+  padding: 0 var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  color: var(--blaq-text);
+  font-size: 14px;
+}
+
+.triggerFilled {
+  border-color: var(--blaq-border-accent);
+}
+
+.triggerContent {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  overflow: hidden;
+}
+
+.placeholder {
+  color: var(--blaq-text-dim);
+}
+
+.chevron {
+  flex-shrink: 0;
+  color: var(--blaq-text-dim);
+  transition: transform var(--transition-fast) var(--transition-fast-easing);
+}
+
+.chevronOpen {
+  transform: rotate(90deg);
+}
+
+.subLabel {
+  font-size: 12px;
+  color: var(--blaq-text-dim);
+}

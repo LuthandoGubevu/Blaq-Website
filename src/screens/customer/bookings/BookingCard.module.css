@@ -1,0 +1,63 @@
+.card {
+  background: var(--blaq-surface);
+  border: 1px solid var(--blaq-border);
+  border-left: 2px solid var(--blaq-gold);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.dateLine {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: var(--blaq-gold);
+}
+
+.serviceTitle {
+  font-family: var(--font-display);
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.providerLine {
+  font-size: 14px;
+}
+
+.providerLabel {
+  color: var(--blaq-text-muted);
+}
+
+.providerName {
+  color: var(--blaq-text);
+}
+
+.zoneLine {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--blaq-text-muted);
+  font-size: 14px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--blaq-border);
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.duration {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--blaq-text-dim);
+}

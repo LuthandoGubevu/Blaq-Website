@@ -1,0 +1,24 @@
+.panel {
+  border: 1px solid var(--blaq-border);
+  background: var(--blaq-surface);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.errorLine {
+  font-size: 13px;
+  color: var(--blaq-error);
+}
+
+.hint {
+  font-size: 12px;
+  color: var(--blaq-text-dim);
+}

@@ -1,0 +1,40 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-2);
+  border: 1px solid var(--blaq-border-strong);
+  background: var(--blaq-field);
+  padding: var(--space-4);
+}
+
+.slot {
+  min-height: var(--hit-target);
+  border: 1px solid var(--blaq-border-strong);
+  background: transparent;
+  color: var(--blaq-text);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slotUnavailable {
+  color: var(--blaq-text-dim);
+  text-decoration: line-through;
+  border-color: var(--blaq-border);
+}
+
+.slotSelected {
+  background: var(--blaq-gold);
+  border-color: var(--blaq-gold);
+  color: var(--blaq-black);
+  font-weight: 700;
+}
+
+.message {
+  grid-column: 1 / -1;
+  color: var(--blaq-text-dim);
+  font-size: 13px;
+  text-align: center;
+  padding: var(--space-2) 0;
+}

@@ -1,0 +1,14 @@
+.eyebrow {
+  display: block;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: var(--eyebrow-tracking);
+  color: var(--blaq-text-dim);
+  margin: 0;
+}
+
+.gold {
+  color: var(--blaq-gold);
+}

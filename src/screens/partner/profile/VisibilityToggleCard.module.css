@@ -1,0 +1,52 @@
+.card {
+  border: 1px solid var(--blaq-border);
+  background: var(--blaq-surface);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--eyebrow-tracking);
+}
+
+.track {
+  flex-shrink: 0;
+  width: 52px;
+  height: 28px;
+  border-radius: var(--radius-pill);
+  background: #2a2a2a;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  transition: background var(--transition-fast) var(--transition-fast-easing);
+}
+
+.trackOn {
+  background: var(--blaq-gold);
+  justify-content: flex-end;
+}
+
+.knob {
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-circle);
+  background: var(--blaq-text);
+  transition: transform var(--transition-fast) var(--transition-fast-easing);
+}
+
+.status {
+  color: var(--blaq-text-muted);
+  font-size: 14px;
+}

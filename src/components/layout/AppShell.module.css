@@ -1,0 +1,15 @@
+.shell {
+  min-height: 100vh;
+  background: var(--blaq-black);
+  display: flex;
+  justify-content: center;
+}
+
+.scrollRegion {
+  width: 100%;
+  max-width: 480px;
+  min-height: 100vh;
+  overflow-y: auto;
+  padding-top: calc(96px + env(safe-area-inset-top));
+  padding-bottom: calc(84px + env(safe-area-inset-bottom));
+}

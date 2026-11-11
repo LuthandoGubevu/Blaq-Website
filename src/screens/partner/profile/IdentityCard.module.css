@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-5) 0;
+}
+
+.avatar {
+  width: 74px;
+  height: 74px;
+  border-radius: var(--radius-circle);
+  background: var(--blaq-field);
+  border: 1px solid var(--blaq-border-strong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blaq-gold);
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.code {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--eyebrow-tracking);
+  color: var(--blaq-text-dim);
+}

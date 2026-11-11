@@ -1,0 +1,22 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: var(--hit-target);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+}
+
+.badge:hover {
+  opacity: 0.8;
+}
+
+.public {
+  color: var(--blaq-success);
+}
+
+.hidden {
+  color: var(--blaq-text-dim);
+}

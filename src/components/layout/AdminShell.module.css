@@ -1,0 +1,19 @@
+.shell {
+  min-height: 100vh;
+  background: var(--blaq-black);
+}
+
+.main {
+  margin-left: var(--sidebar-width);
+  min-height: 100vh;
+}
+
+.content {
+  padding: var(--space-6);
+}
+
+@media (max-width: 900px) {
+  .main {
+    margin-left: var(--sidebar-width-collapsed);
+  }
+}
